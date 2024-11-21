@@ -1,0 +1,77 @@
+/* Dark background with neon glow accents */
+.dark-bg {
+    background: radial-gradient(circle at top left, #101010, #000000);
+    color: white;
+    overflow: hidden;
+  }
+  
+  /* Neon glowing text effect */
+  .text-neon {
+    color: #00ffe5;
+    text-shadow: 0 0 5px #00ffe5, 0 0 10px #00ffe5, 0 0 15px #00ffe5, 0 0 20px #00ffe5;
+  }
+  
+  /* Testimonial feed - continuous scroll */
+  .scroll-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .scroll-content {
+    display: flex;
+    animation: scroll-x 20s linear infinite;
+  }
+  
+  /* Continuous scrolling animation */
+  @keyframes scroll-x {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Glassmorphism effect for testimonial boxes */
+  .glass-effect {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 255, 229, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    padding: 2rem;
+  }
+  
+  /* Neon glowing effect on hover */
+  .glass-effect:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 45px rgba(0, 255, 229, 0.6);
+  }
+  
+  /* Star ratings with glowing neon color */
+  .stars svg {
+    fill: #00ffe5;
+    transition: transform 0.2s ease;
+  }
+  
+  .stars svg:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Typography and spacing for section */
+  section {
+    text-align: center;
+    padding: 4rem 0;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .scroll-content {
+      animation: scroll-x 30s linear infinite;
+    }
+    .testimonial-box {
+      min-width: 280px;
+    }
+  }
+  

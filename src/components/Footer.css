@@ -1,0 +1,15 @@
+
+  
+  /* Copyright Section */
+  .footer-copyright {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 14px;
+    opacity: 0.7;
+    color: #d1d1d1;
+    padding-top: 20px;
+  }
